@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: vinic
+Build-Jdk: 10.0.1
+Implementation-Title: Clound
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: br.com.projetoclound
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/Clound
+Created-By: Maven Integration for Eclipse
+
