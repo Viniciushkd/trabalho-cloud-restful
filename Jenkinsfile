@@ -9,11 +9,6 @@ pipeline {
                 sh 'mvn compile'
             }
         }
-        stage('Unit Tests') {
-            steps {
-                sh 'mvn test'
-            }
-        }
         stage('Quality Tests') {
             steps {
                 sh 'mvn sonar:sonar'
