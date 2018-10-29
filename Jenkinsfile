@@ -26,7 +26,12 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'fazendo deploy...'
+                pushToCloudFoundry(
+                    target: 'mybluemix.net',
+                    organization: 'RM331854@fiap.com.br',
+                    cloudSpace: 'dev',
+                    credentialsId: 'ibm-cloud-credentials'
+                )
             }
         }
     }
