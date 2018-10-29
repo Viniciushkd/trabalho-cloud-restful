@@ -30,7 +30,7 @@ pipeline {
                     target: 'mybluemix.net',
                     organization: 'RM331854@fiap.com.br',
                     cloudSpace: 'dev',
-                    credentialsId: 'ibm-cloud-credentials'
+                    credentialsId: 'ibm-cloud-credentials',
                     manifestChoice: [
                         appName: 'cloud-restful',
                         instances: 1,
