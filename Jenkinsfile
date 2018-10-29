@@ -27,13 +27,12 @@ pipeline {
         stage('Deploy') {
             steps {
                 pushToCloudFoundry(
-                    target: 'mybluemix.net',
+                    target: 'api.ng.bluemix.net',
                     organization: 'RM331854@fiap.com.br',
                     cloudSpace: 'dev',
                     credentialsId: 'ibm-cloud-credentials',
                     manifestChoice: [
                         appName: 'cloud-restful',
-                        instances: 1,
                         appPath: 'target/Clound-0.0.1-SNAPSHOT.jar'
                     ]
                 )
