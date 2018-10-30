@@ -24,7 +24,7 @@ public class RestController {
 	private Twitter twitter = TwitterFactory.getSingleton();
 	private QueryResult result;
 	
-	@CrossOrigin(origins = "http://localhost:5000")
+	@CrossOrigin(origins = "https://immense-reaches-17005.herokuapp.com")
 	@RequestMapping("/twitter")
 	public List<String> greeting(@RequestParam(value = "tweet") String tweet) {
 		List<Tweets> tweets = new ArrayList<>();
